@@ -63,4 +63,8 @@
     #newsletter .content .img {
         display: none;
     }
+
+    #contact .content {
+        width: 90%;
+    }
 }
