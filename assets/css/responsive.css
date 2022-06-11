@@ -1,0 +1,62 @@
+@media (max-width: 1000px) {
+    #newsletter .container,
+    #cards .container {
+        display: flex;
+        justify-content: center;
+    }
+ 
+    #header .menu-item {
+        display: none;
+    }
+
+    #header .menu #checkbox-menu{
+        position: absolute;
+        opacity: 0;
+    }
+
+    #header .menu label { 
+        cursor: pointer;
+        position: relative;
+        display: block;
+        height: 22px;
+        width: 30px;
+    }
+
+    #header .menu label span {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 100%;
+        background: #F0E332;
+        border-radius: 30px;
+        transition: 0.25s ease-in-out;
+    }
+
+    #header .menu label span:nth-child(1) {
+        top: 0;
+    }
+
+    #header .menu label span:nth-child(2) {
+        top: 8px;
+    }
+
+    #header .menu label span:nth-child(3) {
+        top: 16px;
+    }
+
+    #header .menu #checkbox-menu:checked + label span:nth-child(1) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+    #header .menu #checkbox-menu:checked + label span:nth-child(2) {
+        opacity: 0;
+    }
+    #header .menu #checkbox-menu:checked + label span:nth-child(3) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+
+    #newsletter .content img {
+        display: none;
+    }
+}
