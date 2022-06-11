@@ -111,7 +111,6 @@ img {
     border: 2px solid var(--color-height);
     border-radius: 50px;
     box-shadow: -4px 3px  var(--color-light);
-    /* box-shadow: -5px 5px  var(--color-light), 5px -5px var(--color-light); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,7 +169,7 @@ img {
 
 /* === Section Cards ==================== */
 #cards {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 #cards .content {
@@ -207,4 +206,102 @@ img {
     font-size: 1.6em;
     line-height: 26px;
     color: var(--color-light2);
+}
+
+/* ==== Contact ======= */
+#contact .container {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px; /* retirar */
+}
+
+#contact .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+    background-color: var(--color-height);
+    box-shadow: 1px 4px 5px 3px var(--color-text);
+    border-radius: 10px;
+    width: 100%; /* altera a largura quando está no mobile */
+}
+
+#contact .content .title {
+    font-size: 2.5em;
+    letter-spacing: 4px;
+    color: var(--color-text);
+    text-align: center;
+}
+
+#contact .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact .form .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact .form .form-container .form-title {
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: var(--color-text);
+}
+
+#contact .form .form-container form {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    color: var(--color-light2);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact .form .form-container form label span{
+    display: inline-block;
+    padding-left: 8px;
+}
+
+#contact .form .form-container .form-info {
+    display: grid;
+    gap: 2px;
+}
+
+#contact .form .form-container form input,
+textarea {
+    border-radius: 20px;
+    padding-left: 8px;
+    height: 30px;
+    border: 2px solid var(--color-text);
+}
+
+#contact .form .form-container .form-msg select {
+    border-radius: 20px;
+    height: 30px;
+    border: 2px solid var(--color-text);
+}
+
+#contact .form .form-container .form-msg #msg {
+    height: 100px;
+} 
+
+#contact .form .form-container .form-button-submit {
+    justify-content: center;
+}
+
+#contact .form .form-container form [type="submit"] {
+    background-color: var(--color-text);
+    color: var(--color-height);
+    width: max-content;
+    padding-inline: 30px;
+    height: 45px;
+    margin-inline: auto;
+    font-weight: 700;
+    cursor: pointer;
 }
